@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    body {
+      font-family: monospace;
+      font-size: 12px;
+      display: grid;
+      grid-template-columns: 1fr max-content;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-gap: 8px;
+      align-items: center;
+    }
+
+    input {
+      grid-column: 1;
+      width: 10ch;
+    }
+
+    .label {
+      grid-column: 2;
+      text-align: right;
+    }
+
+    button {
+      grid-column: 2;
+    }
+    </style>
+  </head>
+  <body>
+    <input type="text" value="32px" id="columnSize"><span class="label">column size</span>
+    <input type="text" value="32px" id="rowSize"><span class="label">row size</span>
+    <input type="color" value="#686663" id="gridColor"><span class="label">grid color</span>
+    <button id="addOverlay">Add</button>
+    <script src="popup.js"></script>
+  </body>
+</html>
